@@ -1,0 +1,570 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Landing page with hero section, stats, and call-to-action areas for the travel agency",
+      "fields": [
+        {
+          "id": "hero_title",
+          "label": "Hero Title",
+          "type": "string",
+          "description": "Main headline in the hero section"
+        },
+        {
+          "id": "hero_subtitle",
+          "label": "Hero Subtitle",
+          "type": "string",
+          "description": "Secondary text below the hero title"
+        },
+        {
+          "id": "hero_description",
+          "label": "Hero Description",
+          "type": "text",
+          "description": "Longer descriptive text for the hero section"
+        },
+        {
+          "id": "stats_items",
+          "label": "Statistics",
+          "type": "paragraph(stat_item)[]",
+          "description": "Key statistics about the agency"
+        },
+        {
+          "id": "featured_items_title",
+          "label": "Featured Items Title",
+          "type": "string",
+          "description": "Title for the featured destinations section"
+        },
+        {
+          "id": "cta_title",
+          "label": "CTA Title",
+          "type": "string",
+          "description": "Call-to-action section title"
+        },
+        {
+          "id": "cta_description",
+          "label": "CTA Description",
+          "type": "text",
+          "description": "Call-to-action descriptive text"
+        },
+        {
+          "id": "cta_primary",
+          "label": "Primary CTA",
+          "type": "string",
+          "description": "Primary call-to-action button text"
+        },
+        {
+          "id": "cta_secondary",
+          "label": "Secondary CTA",
+          "type": "string",
+          "description": "Secondary call-to-action button text"
+        }
+      ]
+    },
+    {
+      "bundle": "destination",
+      "label": "Destination",
+      "description": "Travel destination with details, imagery, and highlights",
+      "body": true,
+      "fields": [
+        {
+          "id": "region",
+          "label": "Region",
+          "type": "term(regions)[]",
+          "description": "Geographic region"
+        },
+        {
+          "id": "country",
+          "label": "Country",
+          "type": "string",
+          "description": "Country name"
+        },
+        {
+          "id": "highlights",
+          "label": "Highlights",
+          "type": "string[]",
+          "description": "Key highlights of the destination"
+        },
+        {
+          "id": "best_time_to_visit",
+          "label": "Best Time to Visit",
+          "type": "string",
+          "description": "Recommended travel season"
+        },
+        {
+          "id": "image",
+          "label": "Destination Image",
+          "type": "image",
+          "description": "Main image for the destination"
+        },
+        {
+          "id": "featured",
+          "label": "Featured",
+          "type": "bool",
+          "description": "Whether this destination is featured"
+        }
+      ]
+    },
+    {
+      "bundle": "package",
+      "label": "Travel Package",
+      "description": "Curated travel package with pricing, itinerary, and inclusions",
+      "body": true,
+      "fields": [
+        {
+          "id": "price",
+          "label": "Price",
+          "type": "string",
+          "description": "Package price per person"
+        },
+        {
+          "id": "duration",
+          "label": "Duration",
+          "type": "string",
+          "description": "Trip duration"
+        },
+        {
+          "id": "package_type",
+          "label": "Package Type",
+          "type": "term(package_types)[]",
+          "description": "Type of travel package"
+        },
+        {
+          "id": "inclusions",
+          "label": "Inclusions",
+          "type": "string[]",
+          "description": "What is included in the package"
+        },
+        {
+          "id": "image",
+          "label": "Package Image",
+          "type": "image",
+          "description": "Main image for the package"
+        },
+        {
+          "id": "featured",
+          "label": "Featured",
+          "type": "bool",
+          "description": "Whether this package is featured"
+        }
+      ]
+    },
+    {
+      "bundle": "testimonial",
+      "label": "Testimonial",
+      "description": "Customer review and testimonial",
+      "body": true,
+      "fields": [
+        {
+          "id": "traveler_name",
+          "label": "Traveler Name",
+          "type": "string",
+          "description": "Name of the traveler"
+        },
+        {
+          "id": "trip_destination",
+          "label": "Trip Destination",
+          "type": "string",
+          "description": "Where the traveler visited"
+        },
+        {
+          "id": "rating",
+          "label": "Rating",
+          "type": "string",
+          "description": "Rating out of 5 stars"
+        },
+        {
+          "id": "travel_date",
+          "label": "Travel Date",
+          "type": "string",
+          "description": "When the trip took place"
+        },
+        {
+          "id": "image",
+          "label": "Traveler Photo",
+          "type": "image",
+          "description": "Photo of the traveler"
+        }
+      ]
+    },
+    {
+      "bundle": "blog_post",
+      "label": "Blog Post",
+      "description": "Travel blog post with tips, stories, and guides",
+      "body": true,
+      "fields": [
+        {
+          "id": "image",
+          "label": "Featured Image",
+          "type": "image",
+          "description": "Main image for the blog post"
+        },
+        {
+          "id": "category",
+          "label": "Category",
+          "type": "term(blog_categories)[]",
+          "description": "Blog post category"
+        },
+        {
+          "id": "author_name",
+          "label": "Author Name",
+          "type": "string",
+          "description": "Author of the blog post"
+        }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, contact, policies, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A single statistic with number and label",
+      "fields": [
+        {
+          "id": "number",
+          "label": "Number",
+          "type": "string!",
+          "description": "The statistic number or value (required)"
+        },
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "string!",
+          "description": "Description label for the statistic (required)"
+        }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "vocabulary": "regions",
+      "label": "Regions",
+      "terms": ["Europe", "Asia", "Africa", "South America", "North America", "Oceania", "Middle East"]
+    },
+    {
+      "vocabulary": "package_types",
+      "label": "Package Types",
+      "terms": ["Adventure", "Luxury", "Family", "Honeymoon", "Cultural", "Beach", "Cruise"]
+    },
+    {
+      "vocabulary": "blog_categories",
+      "label": "Blog Categories",
+      "terms": ["Travel Tips", "Destination Guides", "Packing", "Budget Travel", "Food & Culture"]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-destinations",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "120+",
+        "label": "Destinations"
+      }
+    },
+    {
+      "id": "stat-travelers",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "50,000+",
+        "label": "Happy Travelers"
+      }
+    },
+    {
+      "id": "stat-years",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "18",
+        "label": "Years of Experience"
+      }
+    },
+    {
+      "id": "stat-rating",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "4.9",
+        "label": "Average Rating"
+      }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Horizons Travel Agency",
+        "hero_title": "Discover the World with Horizons",
+        "hero_subtitle": "Your Journey Begins Here",
+        "hero_description": "<p>From sun-kissed beaches to ancient ruins, we craft unforgettable travel experiences tailored to your dreams. Let our expert advisors design your perfect getaway.</p>",
+        "stats_items": [
+          "@stat-destinations",
+          "@stat-travelers",
+          "@stat-years",
+          "@stat-rating"
+        ],
+        "featured_items_title": "Popular Destinations",
+        "cta_title": "Ready for Your Next Adventure?",
+        "cta_description": "<p>Whether you are seeking a relaxing beach vacation or an adrenaline-fueled expedition, our travel experts will create a personalized itinerary just for you.</p>",
+        "cta_primary": "Browse Packages",
+        "cta_secondary": "Talk to an Advisor"
+      }
+    },
+    {
+      "id": "destination-santorini",
+      "type": "node.destination",
+      "path": "/destinations/santorini-greece",
+      "values": {
+        "title": "Santorini, Greece",
+        "body": "<p>Santorini is one of the Cyclades islands in the Aegean Sea, famous for its dramatic views, stunning sunsets, whitewashed buildings with blue domes, and unique volcanic-sand beaches. The island is a paradise for couples, photographers, and anyone seeking breathtaking Mediterranean beauty.</p><h2>Things to Do</h2><ul><li>Watch the sunset from Oia village</li><li>Explore the ancient ruins of Akrotiri</li><li>Swim at the Red Beach and Kamari Beach</li><li>Wine tasting at local volcanic vineyards</li><li>Take a catamaran cruise around the caldera</li></ul>",
+        "region": ["Europe"],
+        "country": "Greece",
+        "highlights": ["Caldera views", "Blue-domed churches", "Volcanic beaches", "World-class wine"],
+        "best_time_to_visit": "April to October",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80",
+          "alt": "Santorini blue-domed churches overlooking the Aegean Sea",
+          "title": "Santorini Greece"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "destination-kyoto",
+      "type": "node.destination",
+      "path": "/destinations/kyoto-japan",
+      "values": {
+        "title": "Kyoto, Japan",
+        "body": "<p>Kyoto, once the capital of Japan, is a city on the island of Honshu famous for its classical Buddhist temples, gardens, imperial palaces, Shinto shrines, and traditional wooden houses. The city is also known for its formal traditions such as kaiseki dining and geisha entertainment.</p><h2>Things to Do</h2><ul><li>Visit the iconic Fushimi Inari Shrine with thousands of vermillion torii gates</li><li>Stroll through the Arashiyama Bamboo Grove</li><li>Explore Kinkaku-ji, the Golden Pavilion</li><li>Experience a traditional tea ceremony</li><li>Walk through the historic Gion geisha district</li></ul>",
+        "region": ["Asia"],
+        "country": "Japan",
+        "highlights": ["Ancient temples", "Cherry blossoms", "Traditional culture", "Bamboo forests"],
+        "best_time_to_visit": "March to May, October to November",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80",
+          "alt": "Traditional pagoda in Kyoto with cherry blossoms",
+          "title": "Kyoto Japan"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "destination-marrakech",
+      "type": "node.destination",
+      "path": "/destinations/marrakech-morocco",
+      "values": {
+        "title": "Marrakech, Morocco",
+        "body": "<p>Marrakech is a major city in Morocco known for its vibrant souks, stunning palaces, and the famous Jemaa el-Fnaa square alive with storytellers, musicians, and food vendors. The city blends ancient tradition with modern luxury, offering a sensory experience unlike any other.</p><h2>Things to Do</h2><ul><li>Explore the maze-like souks of the Medina</li><li>Visit the Majorelle Garden and YSL Museum</li><li>Stay in a traditional riad with a courtyard</li><li>Day trip to the Atlas Mountains</li><li>Savor tagine and mint tea at a rooftop restaurant</li></ul>",
+        "region": ["Africa"],
+        "country": "Morocco",
+        "highlights": ["Historic medina", "Vibrant souks", "Atlas Mountains", "Moroccan cuisine"],
+        "best_time_to_visit": "March to May, September to November",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800&q=80",
+          "alt": "Colorful streets of Marrakech medina",
+          "title": "Marrakech Morocco"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "destination-patagonia",
+      "type": "node.destination",
+      "path": "/destinations/patagonia-argentina",
+      "values": {
+        "title": "Patagonia, Argentina",
+        "body": "<p>Patagonia is a sparsely populated region at the southern end of South America, shared by Argentina and Chile. It is known for its dramatic mountain scenery, massive glaciers, pristine lakes, and abundant wildlife. Torres del Paine and Los Glaciares National Parks are crown jewels of the region.</p><h2>Things to Do</h2><ul><li>Trek to the base of the Torres del Paine peaks</li><li>Watch ice calve from the Perito Moreno Glacier</li><li>Spot penguins, guanacos, and condors</li><li>Kayak on turquoise glacial lakes</li><li>Horseback ride across the Patagonian steppe</li></ul>",
+        "region": ["South America"],
+        "country": "Argentina",
+        "highlights": ["Glaciers", "Mountain trekking", "Wildlife", "Pristine wilderness"],
+        "best_time_to_visit": "October to April",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1531761535209-180857e963b9?w=800&q=80",
+          "alt": "Torres del Paine mountain peaks in Patagonia",
+          "title": "Patagonia Argentina"
+        },
+        "featured": false
+      }
+    },
+    {
+      "id": "package-greek-islands",
+      "type": "node.package",
+      "path": "/packages/greek-island-hopping",
+      "values": {
+        "title": "Greek Island Hopping Adventure",
+        "body": "<p>Experience the best of the Greek islands on this carefully curated 10-day journey through the Cyclades. Begin in Athens before island-hopping to Mykonos, Paros, and Santorini, each offering its own unique character and charm.</p><h2>Itinerary Highlights</h2><ul><li>Day 1-2: Explore Athens and the Acropolis</li><li>Day 3-4: Party and relax in Mykonos</li><li>Day 5-6: Discover the villages of Paros</li><li>Day 7-9: Sunset magic in Santorini</li><li>Day 10: Return to Athens</li></ul>",
+        "price": "$2,899 per person",
+        "duration": "10 Days / 9 Nights",
+        "package_type": ["Beach"],
+        "inclusions": ["Roundtrip flights", "Boutique hotel stays", "Ferry transfers", "Daily breakfast", "Guided Athens tour", "Sunset sailing cruise"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=80",
+          "alt": "Greek island harbor with blue water and white buildings",
+          "title": "Greek Island Hopping"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "package-japan-cultural",
+      "type": "node.package",
+      "path": "/packages/japan-cultural-immersion",
+      "values": {
+        "title": "Japan Cultural Immersion",
+        "body": "<p>Dive deep into Japanese culture on this 12-day journey from Tokyo to Kyoto and beyond. Experience ancient temples, cutting-edge technology, world-famous cuisine, and the legendary hospitality of Japan.</p><h2>Itinerary Highlights</h2><ul><li>Day 1-3: Tokyo - Shibuya, Asakusa, Tsukiji Market</li><li>Day 4-5: Mount Fuji and Hakone hot springs</li><li>Day 6-8: Kyoto temples, geisha district, bamboo groves</li><li>Day 9-10: Hiroshima and Miyajima Island</li><li>Day 11-12: Osaka food tour and departure</li></ul>",
+        "price": "$4,250 per person",
+        "duration": "12 Days / 11 Nights",
+        "package_type": ["Cultural"],
+        "inclusions": ["International flights", "Japan Rail Pass", "Traditional ryokan stay", "Tea ceremony experience", "Guided temple tours", "Cooking class"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80",
+          "alt": "Traditional Japanese temple gate in autumn",
+          "title": "Japan Cultural Immersion"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "package-morocco-adventure",
+      "type": "node.package",
+      "path": "/packages/morocco-desert-adventure",
+      "values": {
+        "title": "Morocco Desert Adventure",
+        "body": "<p>Journey from the bustling streets of Marrakech to the vast Sahara Desert on this 8-day adventure through Morocco. Experience camel treks, stay in luxury desert camps, and explore ancient kasbahs along the way.</p><h2>Itinerary Highlights</h2><ul><li>Day 1-2: Marrakech medina and palaces</li><li>Day 3: Atlas Mountains and Ait Benhaddou</li><li>Day 4-5: Sahara Desert camel trek and luxury camp</li><li>Day 6: Todra Gorge and Dades Valley</li><li>Day 7-8: Essaouira coastal town and return</li></ul>",
+        "price": "$1,950 per person",
+        "duration": "8 Days / 7 Nights",
+        "package_type": ["Adventure"],
+        "inclusions": ["Airport transfers", "4x4 desert transport", "Luxury desert camp", "Camel trek", "All meals in desert", "English-speaking guide"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1549924231-f129b911e442?w=800&q=80",
+          "alt": "Camel caravan crossing the Sahara Desert at sunset",
+          "title": "Morocco Desert Adventure"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "testimonial-sarah",
+      "type": "node.testimonial",
+      "path": "/testimonials/sarah-mitchell",
+      "values": {
+        "title": "A Trip of a Lifetime to Japan",
+        "body": "<p>Horizons Travel planned the most incredible two-week trip to Japan for my husband and me. Every detail was perfectly arranged, from the bullet train tickets to the traditional ryokan stay in Hakone. The cherry blossoms were in full bloom and the food was extraordinary. We could not have planned it better ourselves.</p>",
+        "traveler_name": "Sarah Mitchell",
+        "trip_destination": "Japan",
+        "rating": "5",
+        "travel_date": "April 2025",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+          "alt": "Sarah Mitchell, satisfied traveler",
+          "title": "Sarah Mitchell"
+        }
+      }
+    },
+    {
+      "id": "testimonial-james",
+      "type": "node.testimonial",
+      "path": "/testimonials/james-chen",
+      "values": {
+        "title": "Greek Islands Exceeded Every Expectation",
+        "body": "<p>The Greek Island Hopping package was absolutely phenomenal. The boutique hotels were charming, the ferry transfers were seamless, and the sunset sailing cruise in Santorini was the highlight of our entire year. The team at Horizons went above and beyond to make special arrangements for our anniversary dinner overlooking the caldera.</p>",
+        "traveler_name": "James Chen",
+        "trip_destination": "Greece",
+        "rating": "5",
+        "travel_date": "June 2025",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+          "alt": "James Chen, satisfied traveler",
+          "title": "James Chen"
+        }
+      }
+    },
+    {
+      "id": "testimonial-elena",
+      "type": "node.testimonial",
+      "path": "/testimonials/elena-rodriguez",
+      "values": {
+        "title": "Morocco Was Pure Magic",
+        "body": "<p>I had always dreamed of visiting Morocco, and Horizons made that dream a reality. Sleeping under the stars in the Sahara Desert was an experience I will never forget. Our guide was knowledgeable and friendly, the food was incredible, and the luxury desert camp exceeded all expectations. I am already planning my next trip with them.</p>",
+        "traveler_name": "Elena Rodriguez",
+        "trip_destination": "Morocco",
+        "rating": "5",
+        "travel_date": "October 2024",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80",
+          "alt": "Elena Rodriguez, satisfied traveler",
+          "title": "Elena Rodriguez"
+        }
+      }
+    },
+    {
+      "id": "blog-packing-tips",
+      "type": "node.blog_post",
+      "path": "/blog/ultimate-packing-guide",
+      "values": {
+        "title": "The Ultimate Packing Guide for Any Destination",
+        "body": "<p>Packing smart is the foundation of stress-free travel. Whether you are heading to a tropical beach or a European city, these packing strategies will help you travel lighter and more efficiently.</p><h2>The Capsule Wardrobe Approach</h2><p>Choose a color palette of three to four neutral tones and build outfits that mix and match. This approach allows you to pack fewer items while creating more outfit combinations.</p><h2>Must-Have Items</h2><ul><li>Universal power adapter with USB ports</li><li>Packing cubes for organization</li><li>Quick-dry travel towel</li><li>Reusable water bottle with filter</li><li>Portable phone charger</li></ul><h2>Toiletry Tips</h2><p>Invest in refillable silicone travel bottles and stick to travel-size essentials. Many hotels provide basics like shampoo and soap, so you may not need to bring your own.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1553531384-411a247ccd73?w=800&q=80",
+          "alt": "Neatly organized suitcase with travel essentials",
+          "title": "Packing Guide"
+        },
+        "category": ["Packing"],
+        "author_name": "Lisa Wang"
+      }
+    },
+    {
+      "id": "blog-budget-europe",
+      "type": "node.blog_post",
+      "path": "/blog/budget-travel-europe",
+      "values": {
+        "title": "How to Travel Europe on a Budget",
+        "body": "<p>Europe does not have to break the bank. With smart planning and insider knowledge, you can experience the continent's finest cities, cuisine, and culture without overspending.</p><h2>Transportation Savings</h2><p>Consider Eurail passes for multi-country trips, book budget airlines well in advance, and use overnight trains to save on accommodation costs. Many cities also have excellent public transit systems that are far cheaper than taxis.</p><h2>Accommodation Hacks</h2><ul><li>Stay in guesthouses or hostels with private rooms</li><li>Book apartments for longer stays to cook your own meals</li><li>Travel during shoulder season for lower rates</li><li>Use loyalty programs and credit card points</li></ul><h2>Free Experiences</h2><p>Many of Europe's greatest attractions are free: walking along the Seine in Paris, exploring Rome's piazzas, or hiking coastal paths in Portugal. Free walking tours are available in most major cities and operate on a tip basis.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+          "alt": "European cityscape with colorful buildings",
+          "title": "Budget Europe Travel"
+        },
+        "category": ["Budget Travel"],
+        "author_name": "Mark Thompson"
+      }
+    },
+    {
+      "id": "blog-food-culture",
+      "type": "node.blog_post",
+      "path": "/blog/eating-your-way-around-asia",
+      "values": {
+        "title": "Eating Your Way Around Asia: A Food Lover's Guide",
+        "body": "<p>Asian cuisine is incredibly diverse, and eating locally is one of the best ways to understand a culture. From street food stalls in Bangkok to ramen shops in Tokyo, here is your guide to the best food experiences across Asia.</p><h2>Thailand</h2><p>Start your day with jok (rice porridge) from a street vendor, lunch on pad thai from a local stall, and end with a seafood feast at a night market. Do not miss som tam (green papaya salad) and mango sticky rice.</p><h2>Japan</h2><p>Every region has its specialty. Try Hiroshima-style okonomiyaki, Osaka takoyaki, Hokkaido ramen, and Tokyo-style sushi at a conveyor belt restaurant for an authentic experience.</p><h2>Vietnam</h2><p>Wake up to a bowl of pho, snack on banh mi for lunch, and explore a vibrant bun cha restaurant for dinner. Vietnamese coffee with condensed milk is a must-try at any time of day.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+          "alt": "Colorful Asian street food market",
+          "title": "Asian Food Guide"
+        },
+        "category": ["Food & Culture"],
+        "author_name": "Priya Sharma"
+      }
+    },
+    {
+      "id": "about-page",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Horizons Travel Agency",
+        "body": "<p>Founded in 2007, Horizons Travel Agency has grown from a small boutique travel consultancy into one of the region's most trusted travel planning firms. We specialize in crafting personalized travel experiences that go beyond the ordinary.</p><h2>Our Mission</h2><p>To inspire and empower travelers to explore the world with confidence, creating memories that last a lifetime through expertly curated journeys and unparalleled personal service.</p><h2>Our Team</h2><p>Our team of 25 travel advisors has collectively visited over 90 countries. Each advisor specializes in specific regions and travel styles, ensuring you receive expert guidance tailored to your interests.</p><h2>Awards &amp; Recognition</h2><p>We have been recognized as a Top 10 Travel Agency by Travel Weekly for five consecutive years and hold preferred partner status with leading hotel groups and airlines worldwide.</p>"
+      }
+    },
+    {
+      "id": "contact-page",
+      "type": "node.page",
+      "path": "/contact",
+      "values": {
+        "title": "Contact Us",
+        "body": "<p>Ready to start planning your dream trip? Our travel advisors are here to help.</p><h2>Visit Our Office</h2><p>742 Explorer Avenue, Suite 200<br>San Francisco, CA 94102</p><h2>Get in Touch</h2><p>Phone: (415) 555-0187<br>Email: hello@horizonstravel.com</p><h2>Office Hours</h2><p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p><h2>Emergency Travel Support</h2><p>Current travelers can reach our 24/7 emergency line at (415) 555-0199 for urgent assistance during their trip.</p>"
+      }
+    }
+  ]
+}

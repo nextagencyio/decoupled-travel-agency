@@ -1,0 +1,129 @@
+{
+  "data": {
+    "nodeTestimonials": {
+      "__typename": "NodeTestimonialConnection",
+      "nodes": [
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-sarah",
+          "title": "A Trip of a Lifetime to Japan",
+          "path": "/testimonials/sarah-mitchell",
+          "body": {
+            "processed": "<p>Horizons Travel planned the most incredible two-week trip to Japan for my husband and me. Every detail was perfectly arranged, from the bullet train tickets to the traditional ryokan stay in Hakone. The cherry blossoms were in full bloom and the food was extraordinary. We could not have planned it better ourselves.</p>",
+            "summary": "Horizons Travel planned the most incredible two-week trip to Japan for my husband and me. Every detail was perfectly arranged, from the bullet train tickets to the traditional ryokan stay in Hakone. T"
+          },
+          "travelerName": "Sarah Mitchell",
+          "tripDestination": "Japan",
+          "rating": "5",
+          "travelDate": "April 2025",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+            "alt": "Sarah Mitchell, satisfied traveler",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-james",
+          "title": "Greek Islands Exceeded Every Expectation",
+          "path": "/testimonials/james-chen",
+          "body": {
+            "processed": "<p>The Greek Island Hopping package was absolutely phenomenal. The boutique hotels were charming, the ferry transfers were seamless, and the sunset sailing cruise in Santorini was the highlight of our entire year. The team at Horizons went above and beyond to make special arrangements for our anniversary dinner overlooking the caldera.</p>",
+            "summary": "The Greek Island Hopping package was absolutely phenomenal. The boutique hotels were charming, the ferry transfers were seamless, and the sunset sailing cruise in Santorini was the highlight of our en"
+          },
+          "travelerName": "James Chen",
+          "tripDestination": "Greece",
+          "rating": "5",
+          "travelDate": "June 2025",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+            "alt": "James Chen, satisfied traveler",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-elena",
+          "title": "Morocco Was Pure Magic",
+          "path": "/testimonials/elena-rodriguez",
+          "body": {
+            "processed": "<p>I had always dreamed of visiting Morocco, and Horizons made that dream a reality. Sleeping under the stars in the Sahara Desert was an experience I will never forget. Our guide was knowledgeable and friendly, the food was incredible, and the luxury desert camp exceeded all expectations. I am already planning my next trip with them.</p>",
+            "summary": "I had always dreamed of visiting Morocco, and Horizons made that dream a reality. Sleeping under the stars in the Sahara Desert was an experience I will never forget. Our guide was knowledgeable and f"
+          },
+          "travelerName": "Elena Rodriguez",
+          "tripDestination": "Morocco",
+          "rating": "5",
+          "travelDate": "October 2024",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80",
+            "alt": "Elena Rodriguez, satisfied traveler",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

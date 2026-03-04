@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Horizons Travel Agency",
+          "path": "/homepage",
+          "heroTitle": "Discover the World with Horizons",
+          "heroSubtitle": "Your Journey Begins Here",
+          "heroDescription": {
+            "processed": "<p>From sun-kissed beaches to ancient ruins, we craft unforgettable travel experiences tailored to your dreams. Let our expert advisors design your perfect getaway.</p>",
+            "summary": "From sun-kissed beaches to ancient ruins, we craft unforgettable travel experiences tailored to your dreams. Let our expert advisors design your perfect getaway."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-destinations",
+              "title": "",
+              "number": "120+",
+              "label": "Destinations"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-travelers",
+              "title": "",
+              "number": "50,000+",
+              "label": "Happy Travelers"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-years",
+              "title": "",
+              "number": "18",
+              "label": "Years of Experience"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-rating",
+              "title": "",
+              "number": "4.9",
+              "label": "Average Rating"
+            }
+          ],
+          "featuredItemsTitle": "Popular Destinations",
+          "ctaTitle": "Ready for Your Next Adventure?",
+          "ctaDescription": {
+            "processed": "<p>Whether you are seeking a relaxing beach vacation or an adrenaline-fueled expedition, our travel experts will create a personalized itinerary just for you.</p>",
+            "summary": "Whether you are seeking a relaxing beach vacation or an adrenaline-fueled expedition, our travel experts will create a personalized itinerary just for you."
+          },
+          "ctaPrimary": "Browse Packages",
+          "ctaSecondary": "Talk to an Advisor"
+        }
+      ]
+    }
+  }
+}

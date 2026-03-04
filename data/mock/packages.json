@@ -1,0 +1,168 @@
+{
+  "data": {
+    "nodePackages": {
+      "__typename": "NodePackageConnection",
+      "nodes": [
+        {
+          "__typename": "NodePackage",
+          "id": "package-greek-islands",
+          "title": "Greek Island Hopping Adventure",
+          "path": "/packages/greek-island-hopping",
+          "body": {
+            "processed": "<p>Experience the best of the Greek islands on this carefully curated 10-day journey through the Cyclades. Begin in Athens before island-hopping to Mykonos, Paros, and Santorini, each offering its own unique character and charm.</p><h2>Itinerary Highlights</h2><ul><li>Day 1-2: Explore Athens and the Acropolis</li><li>Day 3-4: Party and relax in Mykonos</li><li>Day 5-6: Discover the villages of Paros</li><li>Day 7-9: Sunset magic in Santorini</li><li>Day 10: Return to Athens</li></ul>",
+            "summary": "Experience the best of the Greek islands on this carefully curated 10-day journey through the Cyclades. Begin in Athens before island-hopping to Mykonos, Paros, and Santorini, each offering its own un"
+          },
+          "price": "$2,899 per person",
+          "duration": "10 Days / 9 Nights",
+          "packageType": [
+            {
+              "id": "Beach",
+              "name": "Beach"
+            }
+          ],
+          "inclusions": [
+            "Roundtrip flights",
+            "Boutique hotel stays",
+            "Ferry transfers",
+            "Daily breakfast",
+            "Guided Athens tour",
+            "Sunset sailing cruise"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=80",
+            "alt": "Greek island harbor with blue water and white buildings",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodePackage",
+          "id": "package-japan-cultural",
+          "title": "Japan Cultural Immersion",
+          "path": "/packages/japan-cultural-immersion",
+          "body": {
+            "processed": "<p>Dive deep into Japanese culture on this 12-day journey from Tokyo to Kyoto and beyond. Experience ancient temples, cutting-edge technology, world-famous cuisine, and the legendary hospitality of Japan.</p><h2>Itinerary Highlights</h2><ul><li>Day 1-3: Tokyo - Shibuya, Asakusa, Tsukiji Market</li><li>Day 4-5: Mount Fuji and Hakone hot springs</li><li>Day 6-8: Kyoto temples, geisha district, bamboo groves</li><li>Day 9-10: Hiroshima and Miyajima Island</li><li>Day 11-12: Osaka food tour and departure</li></ul>",
+            "summary": "Dive deep into Japanese culture on this 12-day journey from Tokyo to Kyoto and beyond. Experience ancient temples, cutting-edge technology, world-famous cuisine, and the legendary hospitality of Japan"
+          },
+          "price": "$4,250 per person",
+          "duration": "12 Days / 11 Nights",
+          "packageType": [
+            {
+              "id": "Cultural",
+              "name": "Cultural"
+            }
+          ],
+          "inclusions": [
+            "International flights",
+            "Japan Rail Pass",
+            "Traditional ryokan stay",
+            "Tea ceremony experience",
+            "Guided temple tours",
+            "Cooking class"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80",
+            "alt": "Traditional Japanese temple gate in autumn",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodePackage",
+          "id": "package-morocco-adventure",
+          "title": "Morocco Desert Adventure",
+          "path": "/packages/morocco-desert-adventure",
+          "body": {
+            "processed": "<p>Journey from the bustling streets of Marrakech to the vast Sahara Desert on this 8-day adventure through Morocco. Experience camel treks, stay in luxury desert camps, and explore ancient kasbahs along the way.</p><h2>Itinerary Highlights</h2><ul><li>Day 1-2: Marrakech medina and palaces</li><li>Day 3: Atlas Mountains and Ait Benhaddou</li><li>Day 4-5: Sahara Desert camel trek and luxury camp</li><li>Day 6: Todra Gorge and Dades Valley</li><li>Day 7-8: Essaouira coastal town and return</li></ul>",
+            "summary": "Journey from the bustling streets of Marrakech to the vast Sahara Desert on this 8-day adventure through Morocco. Experience camel treks, stay in luxury desert camps, and explore ancient kasbahs along"
+          },
+          "price": "$1,950 per person",
+          "duration": "8 Days / 7 Nights",
+          "packageType": [
+            {
+              "id": "Adventure",
+              "name": "Adventure"
+            }
+          ],
+          "inclusions": [
+            "Airport transfers",
+            "4x4 desert transport",
+            "Luxury desert camp",
+            "Camel trek",
+            "All meals in desert",
+            "English-speaking guide"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1549924231-f129b911e442?w=800&q=80",
+            "alt": "Camel caravan crossing the Sahara Desert at sunset",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1549924231-f129b911e442?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1549924231-f129b911e442?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1549924231-f129b911e442?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        }
+      ]
+    }
+  }
+}

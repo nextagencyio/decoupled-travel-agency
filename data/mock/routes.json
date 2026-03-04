@@ -1,0 +1,800 @@
+{
+  "/homepage": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Horizons Travel Agency",
+          "path": "/homepage",
+          "heroTitle": "Discover the World with Horizons",
+          "heroSubtitle": "Your Journey Begins Here",
+          "heroDescription": {
+            "processed": "<p>From sun-kissed beaches to ancient ruins, we craft unforgettable travel experiences tailored to your dreams. Let our expert advisors design your perfect getaway.</p>",
+            "summary": "From sun-kissed beaches to ancient ruins, we craft unforgettable travel experiences tailored to your dreams. Let our expert advisors design your perfect getaway."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-destinations",
+              "title": "",
+              "number": "120+",
+              "label": "Destinations"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-travelers",
+              "title": "",
+              "number": "50,000+",
+              "label": "Happy Travelers"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-years",
+              "title": "",
+              "number": "18",
+              "label": "Years of Experience"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-rating",
+              "title": "",
+              "number": "4.9",
+              "label": "Average Rating"
+            }
+          ],
+          "featuredItemsTitle": "Popular Destinations",
+          "ctaTitle": "Ready for Your Next Adventure?",
+          "ctaDescription": {
+            "processed": "<p>Whether you are seeking a relaxing beach vacation or an adrenaline-fueled expedition, our travel experts will create a personalized itinerary just for you.</p>",
+            "summary": "Whether you are seeking a relaxing beach vacation or an adrenaline-fueled expedition, our travel experts will create a personalized itinerary just for you."
+          },
+          "ctaPrimary": "Browse Packages",
+          "ctaSecondary": "Talk to an Advisor"
+        }
+      }
+    }
+  },
+  "/destinations/santorini-greece": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeDestination",
+          "id": "destination-santorini",
+          "title": "Santorini, Greece",
+          "path": "/destinations/santorini-greece",
+          "body": {
+            "processed": "<p>Santorini is one of the Cyclades islands in the Aegean Sea, famous for its dramatic views, stunning sunsets, whitewashed buildings with blue domes, and unique volcanic-sand beaches. The island is a paradise for couples, photographers, and anyone seeking breathtaking Mediterranean beauty.</p><h2>Things to Do</h2><ul><li>Watch the sunset from Oia village</li><li>Explore the ancient ruins of Akrotiri</li><li>Swim at the Red Beach and Kamari Beach</li><li>Wine tasting at local volcanic vineyards</li><li>Take a catamaran cruise around the caldera</li></ul>",
+            "summary": "Santorini is one of the Cyclades islands in the Aegean Sea, famous for its dramatic views, stunning sunsets, whitewashed buildings with blue domes, and unique volcanic-sand beaches. The island is a pa"
+          },
+          "region": [
+            {
+              "id": "Europe",
+              "name": "Europe"
+            }
+          ],
+          "country": "Greece",
+          "highlights": [
+            "Caldera views",
+            "Blue-domed churches",
+            "Volcanic beaches",
+            "World-class wine"
+          ],
+          "bestTimeToVisit": "April to October",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80",
+            "alt": "Santorini blue-domed churches overlooking the Aegean Sea",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true,
+          "bestSeason": "April to October"
+        }
+      }
+    }
+  },
+  "/destinations/kyoto-japan": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeDestination",
+          "id": "destination-kyoto",
+          "title": "Kyoto, Japan",
+          "path": "/destinations/kyoto-japan",
+          "body": {
+            "processed": "<p>Kyoto, once the capital of Japan, is a city on the island of Honshu famous for its classical Buddhist temples, gardens, imperial palaces, Shinto shrines, and traditional wooden houses. The city is also known for its formal traditions such as kaiseki dining and geisha entertainment.</p><h2>Things to Do</h2><ul><li>Visit the iconic Fushimi Inari Shrine with thousands of vermillion torii gates</li><li>Stroll through the Arashiyama Bamboo Grove</li><li>Explore Kinkaku-ji, the Golden Pavilion</li><li>Experience a traditional tea ceremony</li><li>Walk through the historic Gion geisha district</li></ul>",
+            "summary": "Kyoto, once the capital of Japan, is a city on the island of Honshu famous for its classical Buddhist temples, gardens, imperial palaces, Shinto shrines, and traditional wooden houses. The city is als"
+          },
+          "region": [
+            {
+              "id": "Asia",
+              "name": "Asia"
+            }
+          ],
+          "country": "Japan",
+          "highlights": [
+            "Ancient temples",
+            "Cherry blossoms",
+            "Traditional culture",
+            "Bamboo forests"
+          ],
+          "bestTimeToVisit": "March to May, October to November",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80",
+            "alt": "Traditional pagoda in Kyoto with cherry blossoms",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true,
+          "bestSeason": "March to May, October to November"
+        }
+      }
+    }
+  },
+  "/destinations/marrakech-morocco": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeDestination",
+          "id": "destination-marrakech",
+          "title": "Marrakech, Morocco",
+          "path": "/destinations/marrakech-morocco",
+          "body": {
+            "processed": "<p>Marrakech is a major city in Morocco known for its vibrant souks, stunning palaces, and the famous Jemaa el-Fnaa square alive with storytellers, musicians, and food vendors. The city blends ancient tradition with modern luxury, offering a sensory experience unlike any other.</p><h2>Things to Do</h2><ul><li>Explore the maze-like souks of the Medina</li><li>Visit the Majorelle Garden and YSL Museum</li><li>Stay in a traditional riad with a courtyard</li><li>Day trip to the Atlas Mountains</li><li>Savor tagine and mint tea at a rooftop restaurant</li></ul>",
+            "summary": "Marrakech is a major city in Morocco known for its vibrant souks, stunning palaces, and the famous Jemaa el-Fnaa square alive with storytellers, musicians, and food vendors. The city blends ancient tr"
+          },
+          "region": [
+            {
+              "id": "Africa",
+              "name": "Africa"
+            }
+          ],
+          "country": "Morocco",
+          "highlights": [
+            "Historic medina",
+            "Vibrant souks",
+            "Atlas Mountains",
+            "Moroccan cuisine"
+          ],
+          "bestTimeToVisit": "March to May, September to November",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800&q=80",
+            "alt": "Colorful streets of Marrakech medina",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true,
+          "bestSeason": "March to May, September to November"
+        }
+      }
+    }
+  },
+  "/destinations/patagonia-argentina": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeDestination",
+          "id": "destination-patagonia",
+          "title": "Patagonia, Argentina",
+          "path": "/destinations/patagonia-argentina",
+          "body": {
+            "processed": "<p>Patagonia is a sparsely populated region at the southern end of South America, shared by Argentina and Chile. It is known for its dramatic mountain scenery, massive glaciers, pristine lakes, and abundant wildlife. Torres del Paine and Los Glaciares National Parks are crown jewels of the region.</p><h2>Things to Do</h2><ul><li>Trek to the base of the Torres del Paine peaks</li><li>Watch ice calve from the Perito Moreno Glacier</li><li>Spot penguins, guanacos, and condors</li><li>Kayak on turquoise glacial lakes</li><li>Horseback ride across the Patagonian steppe</li></ul>",
+            "summary": "Patagonia is a sparsely populated region at the southern end of South America, shared by Argentina and Chile. It is known for its dramatic mountain scenery, massive glaciers, pristine lakes, and abund"
+          },
+          "region": [
+            {
+              "id": "South America",
+              "name": "South America"
+            }
+          ],
+          "country": "Argentina",
+          "highlights": [
+            "Glaciers",
+            "Mountain trekking",
+            "Wildlife",
+            "Pristine wilderness"
+          ],
+          "bestTimeToVisit": "October to April",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1531761535209-180857e963b9?w=800&q=80",
+            "alt": "Torres del Paine mountain peaks in Patagonia",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1531761535209-180857e963b9?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1531761535209-180857e963b9?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1531761535209-180857e963b9?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": false,
+          "bestSeason": "October to April"
+        }
+      }
+    }
+  },
+  "/packages/greek-island-hopping": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePackage",
+          "id": "package-greek-islands",
+          "title": "Greek Island Hopping Adventure",
+          "path": "/packages/greek-island-hopping",
+          "body": {
+            "processed": "<p>Experience the best of the Greek islands on this carefully curated 10-day journey through the Cyclades. Begin in Athens before island-hopping to Mykonos, Paros, and Santorini, each offering its own unique character and charm.</p><h2>Itinerary Highlights</h2><ul><li>Day 1-2: Explore Athens and the Acropolis</li><li>Day 3-4: Party and relax in Mykonos</li><li>Day 5-6: Discover the villages of Paros</li><li>Day 7-9: Sunset magic in Santorini</li><li>Day 10: Return to Athens</li></ul>",
+            "summary": "Experience the best of the Greek islands on this carefully curated 10-day journey through the Cyclades. Begin in Athens before island-hopping to Mykonos, Paros, and Santorini, each offering its own un"
+          },
+          "price": "$2,899 per person",
+          "duration": "10 Days / 9 Nights",
+          "packageType": [
+            {
+              "id": "Beach",
+              "name": "Beach"
+            }
+          ],
+          "inclusions": [
+            "Roundtrip flights",
+            "Boutique hotel stays",
+            "Ferry transfers",
+            "Daily breakfast",
+            "Guided Athens tour",
+            "Sunset sailing cruise"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=80",
+            "alt": "Greek island harbor with blue water and white buildings",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        }
+      }
+    }
+  },
+  "/packages/japan-cultural-immersion": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePackage",
+          "id": "package-japan-cultural",
+          "title": "Japan Cultural Immersion",
+          "path": "/packages/japan-cultural-immersion",
+          "body": {
+            "processed": "<p>Dive deep into Japanese culture on this 12-day journey from Tokyo to Kyoto and beyond. Experience ancient temples, cutting-edge technology, world-famous cuisine, and the legendary hospitality of Japan.</p><h2>Itinerary Highlights</h2><ul><li>Day 1-3: Tokyo - Shibuya, Asakusa, Tsukiji Market</li><li>Day 4-5: Mount Fuji and Hakone hot springs</li><li>Day 6-8: Kyoto temples, geisha district, bamboo groves</li><li>Day 9-10: Hiroshima and Miyajima Island</li><li>Day 11-12: Osaka food tour and departure</li></ul>",
+            "summary": "Dive deep into Japanese culture on this 12-day journey from Tokyo to Kyoto and beyond. Experience ancient temples, cutting-edge technology, world-famous cuisine, and the legendary hospitality of Japan"
+          },
+          "price": "$4,250 per person",
+          "duration": "12 Days / 11 Nights",
+          "packageType": [
+            {
+              "id": "Cultural",
+              "name": "Cultural"
+            }
+          ],
+          "inclusions": [
+            "International flights",
+            "Japan Rail Pass",
+            "Traditional ryokan stay",
+            "Tea ceremony experience",
+            "Guided temple tours",
+            "Cooking class"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80",
+            "alt": "Traditional Japanese temple gate in autumn",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        }
+      }
+    }
+  },
+  "/packages/morocco-desert-adventure": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePackage",
+          "id": "package-morocco-adventure",
+          "title": "Morocco Desert Adventure",
+          "path": "/packages/morocco-desert-adventure",
+          "body": {
+            "processed": "<p>Journey from the bustling streets of Marrakech to the vast Sahara Desert on this 8-day adventure through Morocco. Experience camel treks, stay in luxury desert camps, and explore ancient kasbahs along the way.</p><h2>Itinerary Highlights</h2><ul><li>Day 1-2: Marrakech medina and palaces</li><li>Day 3: Atlas Mountains and Ait Benhaddou</li><li>Day 4-5: Sahara Desert camel trek and luxury camp</li><li>Day 6: Todra Gorge and Dades Valley</li><li>Day 7-8: Essaouira coastal town and return</li></ul>",
+            "summary": "Journey from the bustling streets of Marrakech to the vast Sahara Desert on this 8-day adventure through Morocco. Experience camel treks, stay in luxury desert camps, and explore ancient kasbahs along"
+          },
+          "price": "$1,950 per person",
+          "duration": "8 Days / 7 Nights",
+          "packageType": [
+            {
+              "id": "Adventure",
+              "name": "Adventure"
+            }
+          ],
+          "inclusions": [
+            "Airport transfers",
+            "4x4 desert transport",
+            "Luxury desert camp",
+            "Camel trek",
+            "All meals in desert",
+            "English-speaking guide"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1549924231-f129b911e442?w=800&q=80",
+            "alt": "Camel caravan crossing the Sahara Desert at sunset",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1549924231-f129b911e442?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1549924231-f129b911e442?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1549924231-f129b911e442?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        }
+      }
+    }
+  },
+  "/testimonials/sarah-mitchell": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-sarah",
+          "title": "A Trip of a Lifetime to Japan",
+          "path": "/testimonials/sarah-mitchell",
+          "body": {
+            "processed": "<p>Horizons Travel planned the most incredible two-week trip to Japan for my husband and me. Every detail was perfectly arranged, from the bullet train tickets to the traditional ryokan stay in Hakone. The cherry blossoms were in full bloom and the food was extraordinary. We could not have planned it better ourselves.</p>",
+            "summary": "Horizons Travel planned the most incredible two-week trip to Japan for my husband and me. Every detail was perfectly arranged, from the bullet train tickets to the traditional ryokan stay in Hakone. T"
+          },
+          "travelerName": "Sarah Mitchell",
+          "tripDestination": "Japan",
+          "rating": "5",
+          "travelDate": "April 2025",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+            "alt": "Sarah Mitchell, satisfied traveler",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/testimonials/james-chen": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-james",
+          "title": "Greek Islands Exceeded Every Expectation",
+          "path": "/testimonials/james-chen",
+          "body": {
+            "processed": "<p>The Greek Island Hopping package was absolutely phenomenal. The boutique hotels were charming, the ferry transfers were seamless, and the sunset sailing cruise in Santorini was the highlight of our entire year. The team at Horizons went above and beyond to make special arrangements for our anniversary dinner overlooking the caldera.</p>",
+            "summary": "The Greek Island Hopping package was absolutely phenomenal. The boutique hotels were charming, the ferry transfers were seamless, and the sunset sailing cruise in Santorini was the highlight of our en"
+          },
+          "travelerName": "James Chen",
+          "tripDestination": "Greece",
+          "rating": "5",
+          "travelDate": "June 2025",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+            "alt": "James Chen, satisfied traveler",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/testimonials/elena-rodriguez": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-elena",
+          "title": "Morocco Was Pure Magic",
+          "path": "/testimonials/elena-rodriguez",
+          "body": {
+            "processed": "<p>I had always dreamed of visiting Morocco, and Horizons made that dream a reality. Sleeping under the stars in the Sahara Desert was an experience I will never forget. Our guide was knowledgeable and friendly, the food was incredible, and the luxury desert camp exceeded all expectations. I am already planning my next trip with them.</p>",
+            "summary": "I had always dreamed of visiting Morocco, and Horizons made that dream a reality. Sleeping under the stars in the Sahara Desert was an experience I will never forget. Our guide was knowledgeable and f"
+          },
+          "travelerName": "Elena Rodriguez",
+          "tripDestination": "Morocco",
+          "rating": "5",
+          "travelDate": "October 2024",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80",
+            "alt": "Elena Rodriguez, satisfied traveler",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/blog/ultimate-packing-guide": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeBlogPost",
+          "id": "blog-packing-tips",
+          "title": "The Ultimate Packing Guide for Any Destination",
+          "path": "/blog/ultimate-packing-guide",
+          "body": {
+            "processed": "<p>Packing smart is the foundation of stress-free travel. Whether you are heading to a tropical beach or a European city, these packing strategies will help you travel lighter and more efficiently.</p><h2>The Capsule Wardrobe Approach</h2><p>Choose a color palette of three to four neutral tones and build outfits that mix and match. This approach allows you to pack fewer items while creating more outfit combinations.</p><h2>Must-Have Items</h2><ul><li>Universal power adapter with USB ports</li><li>Packing cubes for organization</li><li>Quick-dry travel towel</li><li>Reusable water bottle with filter</li><li>Portable phone charger</li></ul><h2>Toiletry Tips</h2><p>Invest in refillable silicone travel bottles and stick to travel-size essentials. Many hotels provide basics like shampoo and soap, so you may not need to bring your own.</p>",
+            "summary": "Packing smart is the foundation of stress-free travel. Whether you are heading to a tropical beach or a European city, these packing strategies will help you travel lighter and more efficiently.The Ca"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1553531384-411a247ccd73?w=800&q=80",
+            "alt": "Neatly organized suitcase with travel essentials",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1553531384-411a247ccd73?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1553531384-411a247ccd73?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1553531384-411a247ccd73?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "category": [
+            {
+              "id": "Packing",
+              "name": "Packing"
+            }
+          ],
+          "authorName": "Lisa Wang"
+        }
+      }
+    }
+  },
+  "/blog/budget-travel-europe": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeBlogPost",
+          "id": "blog-budget-europe",
+          "title": "How to Travel Europe on a Budget",
+          "path": "/blog/budget-travel-europe",
+          "body": {
+            "processed": "<p>Europe does not have to break the bank. With smart planning and insider knowledge, you can experience the continent's finest cities, cuisine, and culture without overspending.</p><h2>Transportation Savings</h2><p>Consider Eurail passes for multi-country trips, book budget airlines well in advance, and use overnight trains to save on accommodation costs. Many cities also have excellent public transit systems that are far cheaper than taxis.</p><h2>Accommodation Hacks</h2><ul><li>Stay in guesthouses or hostels with private rooms</li><li>Book apartments for longer stays to cook your own meals</li><li>Travel during shoulder season for lower rates</li><li>Use loyalty programs and credit card points</li></ul><h2>Free Experiences</h2><p>Many of Europe's greatest attractions are free: walking along the Seine in Paris, exploring Rome's piazzas, or hiking coastal paths in Portugal. Free walking tours are available in most major cities and operate on a tip basis.</p>",
+            "summary": "Europe does not have to break the bank. With smart planning and insider knowledge, you can experience the continent's finest cities, cuisine, and culture without overspending.Transportation SavingsCon"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+            "alt": "European cityscape with colorful buildings",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "category": [
+            {
+              "id": "Budget Travel",
+              "name": "Budget Travel"
+            }
+          ],
+          "authorName": "Mark Thompson"
+        }
+      }
+    }
+  },
+  "/blog/eating-your-way-around-asia": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeBlogPost",
+          "id": "blog-food-culture",
+          "title": "Eating Your Way Around Asia: A Food Lover's Guide",
+          "path": "/blog/eating-your-way-around-asia",
+          "body": {
+            "processed": "<p>Asian cuisine is incredibly diverse, and eating locally is one of the best ways to understand a culture. From street food stalls in Bangkok to ramen shops in Tokyo, here is your guide to the best food experiences across Asia.</p><h2>Thailand</h2><p>Start your day with jok (rice porridge) from a street vendor, lunch on pad thai from a local stall, and end with a seafood feast at a night market. Do not miss som tam (green papaya salad) and mango sticky rice.</p><h2>Japan</h2><p>Every region has its specialty. Try Hiroshima-style okonomiyaki, Osaka takoyaki, Hokkaido ramen, and Tokyo-style sushi at a conveyor belt restaurant for an authentic experience.</p><h2>Vietnam</h2><p>Wake up to a bowl of pho, snack on banh mi for lunch, and explore a vibrant bun cha restaurant for dinner. Vietnamese coffee with condensed milk is a must-try at any time of day.</p>",
+            "summary": "Asian cuisine is incredibly diverse, and eating locally is one of the best ways to understand a culture. From street food stalls in Bangkok to ramen shops in Tokyo, here is your guide to the best food"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+            "alt": "Colorful Asian street food market",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "category": [
+            {
+              "id": "Food & Culture",
+              "name": "Food & Culture"
+            }
+          ],
+          "authorName": "Priya Sharma"
+        }
+      }
+    }
+  },
+  "/about": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "about-page",
+          "title": "About Horizons Travel Agency",
+          "path": "/about",
+          "body": {
+            "processed": "<p>Founded in 2007, Horizons Travel Agency has grown from a small boutique travel consultancy into one of the region's most trusted travel planning firms. We specialize in crafting personalized travel experiences that go beyond the ordinary.</p><h2>Our Mission</h2><p>To inspire and empower travelers to explore the world with confidence, creating memories that last a lifetime through expertly curated journeys and unparalleled personal service.</p><h2>Our Team</h2><p>Our team of 25 travel advisors has collectively visited over 90 countries. Each advisor specializes in specific regions and travel styles, ensuring you receive expert guidance tailored to your interests.</p><h2>Awards &amp; Recognition</h2><p>We have been recognized as a Top 10 Travel Agency by Travel Weekly for five consecutive years and hold preferred partner status with leading hotel groups and airlines worldwide.</p>",
+            "summary": "Founded in 2007, Horizons Travel Agency has grown from a small boutique travel consultancy into one of the region's most trusted travel planning firms. We specialize in crafting personalized travel ex"
+          }
+        }
+      }
+    }
+  },
+  "/contact": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "contact-page",
+          "title": "Contact Us",
+          "path": "/contact",
+          "body": {
+            "processed": "<p>Ready to start planning your dream trip? Our travel advisors are here to help.</p><h2>Visit Our Office</h2><p>742 Explorer Avenue, Suite 200<br>San Francisco, CA 94102</p><h2>Get in Touch</h2><p>Phone: (415) 555-0187<br>Email: hello@horizonstravel.com</p><h2>Office Hours</h2><p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p><h2>Emergency Travel Support</h2><p>Current travelers can reach our 24/7 emergency line at (415) 555-0199 for urgent assistance during their trip.</p>",
+            "summary": "Ready to start planning your dream trip? Our travel advisors are here to help.Visit Our Office742 Explorer Avenue, Suite 200San Francisco, CA 94102Get in TouchPhone: (415) 555-0187Email: hello@horizon"
+          }
+        }
+      }
+    }
+  }
+}

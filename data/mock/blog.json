@@ -1,0 +1,138 @@
+{
+  "data": {
+    "nodeBlogPosts": {
+      "__typename": "NodeBlogPostConnection",
+      "nodes": [
+        {
+          "__typename": "NodeBlogPost",
+          "id": "blog-packing-tips",
+          "title": "The Ultimate Packing Guide for Any Destination",
+          "path": "/blog/ultimate-packing-guide",
+          "body": {
+            "processed": "<p>Packing smart is the foundation of stress-free travel. Whether you are heading to a tropical beach or a European city, these packing strategies will help you travel lighter and more efficiently.</p><h2>The Capsule Wardrobe Approach</h2><p>Choose a color palette of three to four neutral tones and build outfits that mix and match. This approach allows you to pack fewer items while creating more outfit combinations.</p><h2>Must-Have Items</h2><ul><li>Universal power adapter with USB ports</li><li>Packing cubes for organization</li><li>Quick-dry travel towel</li><li>Reusable water bottle with filter</li><li>Portable phone charger</li></ul><h2>Toiletry Tips</h2><p>Invest in refillable silicone travel bottles and stick to travel-size essentials. Many hotels provide basics like shampoo and soap, so you may not need to bring your own.</p>",
+            "summary": "Packing smart is the foundation of stress-free travel. Whether you are heading to a tropical beach or a European city, these packing strategies will help you travel lighter and more efficiently.The Ca"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1553531384-411a247ccd73?w=800&q=80",
+            "alt": "Neatly organized suitcase with travel essentials",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1553531384-411a247ccd73?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1553531384-411a247ccd73?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1553531384-411a247ccd73?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "category": [
+            {
+              "id": "Packing",
+              "name": "Packing"
+            }
+          ],
+          "authorName": "Lisa Wang"
+        },
+        {
+          "__typename": "NodeBlogPost",
+          "id": "blog-budget-europe",
+          "title": "How to Travel Europe on a Budget",
+          "path": "/blog/budget-travel-europe",
+          "body": {
+            "processed": "<p>Europe does not have to break the bank. With smart planning and insider knowledge, you can experience the continent's finest cities, cuisine, and culture without overspending.</p><h2>Transportation Savings</h2><p>Consider Eurail passes for multi-country trips, book budget airlines well in advance, and use overnight trains to save on accommodation costs. Many cities also have excellent public transit systems that are far cheaper than taxis.</p><h2>Accommodation Hacks</h2><ul><li>Stay in guesthouses or hostels with private rooms</li><li>Book apartments for longer stays to cook your own meals</li><li>Travel during shoulder season for lower rates</li><li>Use loyalty programs and credit card points</li></ul><h2>Free Experiences</h2><p>Many of Europe's greatest attractions are free: walking along the Seine in Paris, exploring Rome's piazzas, or hiking coastal paths in Portugal. Free walking tours are available in most major cities and operate on a tip basis.</p>",
+            "summary": "Europe does not have to break the bank. With smart planning and insider knowledge, you can experience the continent's finest cities, cuisine, and culture without overspending.Transportation SavingsCon"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+            "alt": "European cityscape with colorful buildings",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "category": [
+            {
+              "id": "Budget Travel",
+              "name": "Budget Travel"
+            }
+          ],
+          "authorName": "Mark Thompson"
+        },
+        {
+          "__typename": "NodeBlogPost",
+          "id": "blog-food-culture",
+          "title": "Eating Your Way Around Asia: A Food Lover's Guide",
+          "path": "/blog/eating-your-way-around-asia",
+          "body": {
+            "processed": "<p>Asian cuisine is incredibly diverse, and eating locally is one of the best ways to understand a culture. From street food stalls in Bangkok to ramen shops in Tokyo, here is your guide to the best food experiences across Asia.</p><h2>Thailand</h2><p>Start your day with jok (rice porridge) from a street vendor, lunch on pad thai from a local stall, and end with a seafood feast at a night market. Do not miss som tam (green papaya salad) and mango sticky rice.</p><h2>Japan</h2><p>Every region has its specialty. Try Hiroshima-style okonomiyaki, Osaka takoyaki, Hokkaido ramen, and Tokyo-style sushi at a conveyor belt restaurant for an authentic experience.</p><h2>Vietnam</h2><p>Wake up to a bowl of pho, snack on banh mi for lunch, and explore a vibrant bun cha restaurant for dinner. Vietnamese coffee with condensed milk is a must-try at any time of day.</p>",
+            "summary": "Asian cuisine is incredibly diverse, and eating locally is one of the best ways to understand a culture. From street food stalls in Bangkok to ramen shops in Tokyo, here is your guide to the best food"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+            "alt": "Colorful Asian street food market",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "category": [
+            {
+              "id": "Food & Culture",
+              "name": "Food & Culture"
+            }
+          ],
+          "authorName": "Priya Sharma"
+        }
+      ]
+    }
+  }
+}
