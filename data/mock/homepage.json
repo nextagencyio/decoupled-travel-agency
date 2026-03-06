@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-destinations",
               "title": "",
-              "number": "120+",
+              "number": "120+", "value": "120+",
               "label": "Destinations"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-travelers",
               "title": "",
-              "number": "50,000+",
+              "number": "50,000+", "value": "50,000+",
               "label": "Happy Travelers"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-years",
               "title": "",
-              "number": "18",
+              "number": "18", "value": "18",
               "label": "Years of Experience"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-rating",
               "title": "",
-              "number": "4.9",
+              "number": "4.9", "value": "4.9",
               "label": "Average Rating"
             }
           ],
