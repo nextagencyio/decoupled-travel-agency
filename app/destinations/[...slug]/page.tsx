@@ -24,7 +24,7 @@ interface DestinationByPathData {
 async function getDestination(path: string): Promise<DrupalDestination | null> {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_DESTINATION_BY_PATH, { path })
+    const data = await client.raw(GET_DESTINATION_BY_PATH, { path })
     return data?.route?.entity || null
   } catch (error) {
     console.error('Error fetching destination:', error)

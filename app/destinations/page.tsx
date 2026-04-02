@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 async function getData() {
   try {
     const client = getClient()
-    const { data } = await client.raw<DestinationsData>(({
+    const data = await client.raw<DestinationsData>(({
       query: GET_DESTINATIONS,
       variables: { first: 50 },
       fetchPolicy: 'cache-first',
@@ -59,7 +59,7 @@ export default async function DestinationsPage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {items.map((item) => (
+              {items.map((item: any) => (
                 <DestinationCard key={item.id} item={item} />
               ))}
             </div>
