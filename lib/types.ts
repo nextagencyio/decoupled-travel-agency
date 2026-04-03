@@ -20,7 +20,7 @@ export interface DrupalHomepage extends DrupalNode {
   heroSubtitle?: string
   heroDescription?: { processed: string }
   statsItems?: DrupalStatItem[]
-  featuredDestinationsTitle?: string
+  featuredItemsTitle?: string
   ctaTitle?: string
   ctaDescription?: { processed: string }
   ctaPrimary?: string
@@ -35,7 +35,9 @@ export interface HomepageData {
 export interface DrupalDestination extends DrupalNode {
   body?: { processed: string; summary?: string }
   region?: DrupalTerm[]
-  bestSeason?: string
+  country?: string
+  bestTimeToVisit?: string
+  highlights?: string[]
   image?: DrupalImage
   featured?: boolean
 }
@@ -47,12 +49,12 @@ export interface DestinationsData {
 // Package
 export interface DrupalPackage extends DrupalNode {
   body?: { processed: string; summary?: string }
-  destinationName?: string
   packageType?: DrupalTerm[]
   price?: string
   duration?: string
-  includes?: { processed: string }
+  inclusions?: string[]
   image?: DrupalImage
+  featured?: boolean
 }
 
 export interface PackagesData {
@@ -63,9 +65,10 @@ export interface PackagesData {
 export interface DrupalTestimonial extends DrupalNode {
   body?: { processed: string }
   travelerName?: string
-  destinationName?: string
-  rating?: number
-  photo?: DrupalImage
+  tripDestination?: string
+  rating?: string
+  travelDate?: string
+  image?: DrupalImage
 }
 
 export interface TestimonialsData {
@@ -75,9 +78,9 @@ export interface TestimonialsData {
 // Blog Post
 export interface DrupalBlogPost extends DrupalNode {
   body?: { processed: string; summary?: string }
-  blogCategory?: DrupalTerm[]
+  authorName?: string
+  category?: DrupalTerm[]
   image?: DrupalImage
-  featured?: boolean
 }
 
 export interface BlogPostsData {

@@ -1,4 +1,6 @@
-// Tagged template that returns the query string
+import { gql as apolloGql } from '@apollo/client'
+
+// Tagged template that returns the query string (for server-side client.raw() calls)
 const gql = (strings: TemplateStringsArray, ...values: any[]) => strings.reduce((a, s, i) => a + s + (values[i] || ''), '')
 
 export const GET_HOMEPAGE_DATA = gql`
@@ -14,7 +16,7 @@ export const GET_HOMEPAGE_DATA = gql`
         statsItems {
           ... on ParagraphStatItem { id number label }
         }
-        featuredDestinationsTitle
+        featuredItemsTitle
         ctaTitle
         ctaDescription { processed }
         ctaPrimary
@@ -32,7 +34,9 @@ export const GET_DESTINATIONS = gql`
         ... on NodeDestination {
           body { processed summary }
           region { ... on TermInterface { id name } }
-          bestSeason
+          country
+          bestTimeToVisit
+          highlights
           image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
           featured
         }
@@ -50,7 +54,9 @@ export const GET_DESTINATION_BY_PATH = gql`
             id title path
             body { processed }
             region { ... on TermInterface { id name } }
-            bestSeason
+            country
+            bestTimeToVisit
+            highlights
             image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
             featured
           }
@@ -67,12 +73,12 @@ export const GET_PACKAGES = gql`
         id title path
         ... on NodePackage {
           body { processed summary }
-          destinationName
           packageType { ... on TermInterface { id name } }
           price
           duration
-          includes { processed }
+          inclusions
           image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+          featured
         }
       }
     }
@@ -87,12 +93,12 @@ export const GET_PACKAGE_BY_PATH = gql`
           ... on NodePackage {
             id title path
             body { processed }
-            destinationName
             packageType { ... on TermInterface { id name } }
             price
             duration
-            includes { processed }
+            inclusions
             image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+            featured
           }
         }
       }
@@ -108,9 +114,9 @@ export const GET_TESTIMONIALS = gql`
         ... on NodeTestimonial {
           body { processed }
           travelerName
-          destinationName
+          tripDestination
           rating
-          photo { url alt width height variations(styles: [MEDIUM, THUMBNAIL]) { name url width height } }
+          image { url alt width height variations(styles: [MEDIUM, THUMBNAIL]) { name url width height } }
         }
       }
     }
@@ -126,9 +132,10 @@ export const GET_TESTIMONIAL_BY_PATH = gql`
             id title path
             body { processed }
             travelerName
-            destinationName
+            tripDestination
             rating
-            photo { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+            travelDate
+            image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
           }
         }
       }
@@ -144,9 +151,9 @@ export const GET_BLOG_POSTS = gql`
         created { timestamp }
         ... on NodeBlogPost {
           body { processed summary }
-          blogCategory { ... on TermInterface { id name } }
+          authorName
+          category { ... on TermInterface { id name } }
           image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-          featured
         }
       }
     }
@@ -162,9 +169,9 @@ export const GET_BLOG_POST_BY_PATH = gql`
             id title path
             created { timestamp }
             body { processed }
-            blogCategory { ... on TermInterface { id name } }
+            authorName
+            category { ... on TermInterface { id name } }
             image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
-            featured
           }
         }
       }
@@ -181,35 +188,37 @@ export const GET_NODE_BY_PATH = gql`
           ... on NodeDestination {
             id title path body { processed }
             region { ... on TermInterface { id name } }
-            bestSeason
+            country
+            bestTimeToVisit
+            highlights
             image { url alt width height }
             featured
           }
           ... on NodePackage {
             id title path body { processed }
-            destinationName
             packageType { ... on TermInterface { id name } }
             price duration
-            includes { processed }
+            inclusions
             image { url alt width height }
+            featured
           }
           ... on NodeTestimonial {
             id title path body { processed }
-            travelerName destinationName rating
-            photo { url alt width height }
+            travelerName tripDestination rating
+            image { url alt width height }
           }
           ... on NodeBlogPost {
             id title path body { processed }
             created { timestamp }
-            blogCategory { ... on TermInterface { id name } }
+            authorName
+            category { ... on TermInterface { id name } }
             image { url alt width height }
-            featured
           }
           ... on NodeHomepage {
             id title heroTitle heroSubtitle
             heroDescription { processed }
             statsItems { ... on ParagraphStatItem { id number label } }
-            featuredDestinationsTitle
+            featuredItemsTitle
             ctaTitle ctaDescription { processed }
             ctaPrimary ctaSecondary
           }
@@ -219,14 +228,15 @@ export const GET_NODE_BY_PATH = gql`
   }
 `
 
-export const GET_FEATURED_DESTINATIONS = gql`
+// Apollo DocumentNode queries for client-side useQuery() hooks
+export const GET_FEATURED_DESTINATIONS = apolloGql`
   query GetFeaturedDestinations {
     nodeDestinations(first: 3, sortKey: TITLE) {
       nodes {
         id title path
         ... on NodeDestination {
           region { ... on TermInterface { id name } }
-          bestSeason
+          bestTimeToVisit
           image { url alt variations(styles: [MEDIUM]) { name url width height } }
           featured
         }
@@ -235,7 +245,7 @@ export const GET_FEATURED_DESTINATIONS = gql`
   }
 `
 
-export const GET_FEATURED_BLOG_POSTS = gql`
+export const GET_FEATURED_BLOG_POSTS = apolloGql`
   query GetFeaturedBlogPosts {
     nodeBlogPosts(first: 3, sortKey: CREATED_AT) {
       nodes {
@@ -244,23 +254,22 @@ export const GET_FEATURED_BLOG_POSTS = gql`
         ... on NodeBlogPost {
           body { summary }
           image { url alt variations(styles: [MEDIUM, THUMBNAIL]) { name url width height } }
-          blogCategory { ... on TermInterface { id name } }
-          featured
+          category { ... on TermInterface { id name } }
         }
       }
     }
   }
 `
 
-export const GET_FEATURED_TESTIMONIALS = gql`
+export const GET_FEATURED_TESTIMONIALS = apolloGql`
   query GetFeaturedTestimonials {
     nodeTestimonials(first: 3, sortKey: CREATED_AT) {
       nodes {
         id title path
         ... on NodeTestimonial {
           body { processed }
-          travelerName destinationName rating
-          photo { url alt variations(styles: [THUMBNAIL]) { name url width height } }
+          travelerName tripDestination rating
+          image { url alt variations(styles: [THUMBNAIL]) { name url width height } }
         }
       }
     }

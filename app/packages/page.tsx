@@ -16,11 +16,7 @@ export const metadata: Metadata = {
 async function getData() {
   try {
     const client = getClient()
-    const data = await client.raw<PackagesData>(({
-      query: GET_PACKAGES,
-      variables: { first: 50 },
-      fetchPolicy: 'cache-first',
-    }))
+    const data = await client.raw<PackagesData>(GET_PACKAGES, { first: 50 })
     return data?.nodePackages?.nodes || []
   } catch (error) {
     console.error('Error fetching travel packages:', error)

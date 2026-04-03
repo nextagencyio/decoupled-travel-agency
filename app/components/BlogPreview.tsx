@@ -46,7 +46,7 @@ export default function BlogPreview() {
                     {post.image?.url ? <ResponsiveImage src={post.image.url} alt={post.image.alt || post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" variations={post.image.variations} targetWidth={800} /> : <div className="absolute inset-0 bg-gradient-to-br from-cyan-600 to-teal-700 flex items-center justify-center"><BookOpen className="w-24 h-24 text-white/30" /></div>}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                      {post.blogCategory && post.blogCategory.length > 0 && <span className="inline-block bg-amber-500 text-cyan-900 px-3 py-1 rounded-full text-sm font-semibold mb-3">{post.blogCategory[0].name}</span>}
+                      {post.category && post.category.length > 0 && <span className="inline-block bg-amber-500 text-cyan-900 px-3 py-1 rounded-full text-sm font-semibold mb-3">{post.category[0].name}</span>}
                       <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">{post.title}</h3>
                       {post.body?.summary && <p className="text-white/80 mb-4 line-clamp-2">{post.body.summary}</p>}
                       <div className="flex items-center text-white/60 text-sm"><Calendar className="w-4 h-4 mr-2" />{formatDate(post.created.timestamp)}</div>
@@ -56,7 +56,7 @@ export default function BlogPreview() {
                   <div className="bg-gray-50 rounded-xl overflow-hidden h-full hover:shadow-md transition-shadow">
                     <div className="relative h-40">{post.image?.url ? <ResponsiveImage src={post.image.url} alt={post.image.alt || post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" variations={post.image.variations} targetWidth={400} /> : <div className="absolute inset-0 bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center"><BookOpen className="w-10 h-10 text-white/30" /></div>}</div>
                     <div className="p-5">
-                      {post.blogCategory && post.blogCategory.length > 0 && <span className="text-cyan-700 text-sm font-medium">{post.blogCategory[0].name}</span>}
+                      {post.category && post.category.length > 0 && <span className="text-cyan-700 text-sm font-medium">{post.category[0].name}</span>}
                       <h3 className="text-lg font-bold text-gray-900 mt-2 mb-2 group-hover:text-cyan-700 transition-colors line-clamp-2">{post.title}</h3>
                       <div className="flex items-center text-gray-500 text-sm"><Calendar className="w-4 h-4 mr-2" />{formatDate(post.created.timestamp)}</div>
                     </div>

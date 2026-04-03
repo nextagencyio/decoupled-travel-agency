@@ -88,7 +88,18 @@ export function getClient(): TypedClient {
           query ($path: String!) {
             route(path: $path) {
               ... on RouteInternal {
-                entity { ... on NodePage { __typename id title path body { processed } } }
+                entity {
+                  ... on NodePage { __typename id title path body { processed } }
+                  ... on NodeHomepage {
+                    __typename id title path
+                    heroTitle heroSubtitle
+                    heroDescription { processed }
+                    statsItems { ... on ParagraphStatItem { id number label } }
+                    featuredItemsTitle
+                    ctaTitle ctaDescription { processed }
+                    ctaPrimary ctaSecondary
+                  }
+                }
               }
             }
           }

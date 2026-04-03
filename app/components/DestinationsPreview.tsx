@@ -13,7 +13,7 @@ interface FeaturedDestinationsData { nodeDestinations: { nodes: DrupalDestinatio
 export default function DestinationsPreview({ homepageContent }: DestinationsPreviewProps) {
   const { data, loading, error } = useQuery<FeaturedDestinationsData>(GET_FEATURED_DESTINATIONS)
   const destinations = data?.nodeDestinations?.nodes || []
-  const sectionTitle = homepageContent?.featuredDestinationsTitle || 'Popular Destinations'
+  const sectionTitle = homepageContent?.featuredItemsTitle || 'Popular Destinations'
 
   if (loading) return (
     <section className="py-16 md:py-20 bg-gray-50">
@@ -46,7 +46,7 @@ export default function DestinationsPreview({ homepageContent }: DestinationsPre
                 {dest.region && dest.region.length > 0 && <div className="text-sm text-cyan-700 font-medium mb-2">{dest.region[0].name}</div>}
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-cyan-700 transition-colors">{dest.title}</h3>
                 <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
-                  {dest.bestSeason && <div className="flex items-center gap-1"><MapPin className="w-4 h-4" /><span>{dest.bestSeason}</span></div>}
+                  {dest.bestTimeToVisit && <div className="flex items-center gap-1"><MapPin className="w-4 h-4" /><span>{dest.bestTimeToVisit}</span></div>}
                 </div>
                 <div className="flex items-center text-cyan-700 font-medium group-hover:gap-2 transition-all">Learn more<ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" /></div>
               </div>

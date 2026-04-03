@@ -16,11 +16,7 @@ export const metadata: Metadata = {
 async function getData() {
   try {
     const client = getClient()
-    const data = await client.raw<BlogPostsData>(({
-      query: GET_BLOG_POSTS,
-      variables: { first: 50 },
-      fetchPolicy: 'cache-first',
-    }))
+    const data = await client.raw<BlogPostsData>(GET_BLOG_POSTS, { first: 50 })
     return data?.nodeBlogPosts?.nodes || []
   } catch (error) {
     console.error('Error fetching travel blog:', error)
